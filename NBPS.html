@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+
+<style>
+body {
+	margin: 0;
+}
+
+select {
+	color: black;
+	font-family: arial;
+	background-color: white;
+	border: 1px solid black;
+}
+
+option {
+	border-color: black;
+}
+</style>
+
+<title>Grizzly_Attire_Suits</title>
+
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" type="text/css" href="shops.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+
+<body>
+
+<!-- Section -->
+
+<br><br><br>
+<center><div class="section">
+
+    <!-- Back Button -->
+        <a href="catalog.html"><div class="back"><img src="left.png" style="display: inline-block; width: 30px; height: 14px;"> Back</div></a>
+    <!-- End Back Button -->
+
+	
+<div class="centerline"></div>
+
+
+<div class="logobot"></div>
+
+
+<!-- Image Slideshow -->
+
+<div style="background-color: blue; positoin: absolute; width: 36%; height: 70%; display: inline-block; float: left;">
+	<img src="NBPS.jpeg" style="width: 100%;">
+</div>
+
+<div class="SSBOX">
+	<div style="margin-left: 0px;">
+		<div class="row">
+		  <div class="column">
+			<img src="NBPS_Front.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		  </div><br><br><br><br><br><br><br><br><br><br>
+		  <div class="column">
+			<img src="NBPS_Back.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		  </div><br><br><br><br><br><br><br><br><br><br>
+		  <div class="column">
+			<img src="NBPS_Pants.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		  </div>
+		</div>
+	</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="NBPS_Front.jpg" style="width:60%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="NBPS_Back.jpg" style="width:60%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="NBPS_Pants.jpg" style="width:60%">
+    </div>
+    
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="NBPS_Front.jpg" style="width:90%" onclick="currentSlide(1)" alt="Navy Blue Suit Front">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="NBPS_Back.jpg" style="width:90%" onclick="currentSlide(2)" alt="Navy Blue Suit Back">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="NBPS_Pants.jpg" style="width:90%" onclick="currentSlide(3)" alt="Navy Blue Suit Pants">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<!-- End Image Slideshow -->
+
+<div id="title-text" style="right: 34%;"><b>Navy Blue Plaid Suit</b></div>
+
+<!-- Description -->
+<div class="description">
+One of our classic styles of suits. Appropriate for nearly any occasion!<br><br>
+
+Fabric | Gabardine<br>
+Style | Classic<br><br>
+
+<div style="display: inline-block;">Original price<div style="text-decoration: line-through;">$280.00</div></div><br><br>
+<div style="display: inline-block;">Sale Price<div style="color: red; positoin: relative;">$224.00</div></div><br><br><br>
+
+Quantity
+<select>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select><br><br><br>
+
+Size
+<select>
+<option>38R</option>
+<option>40R</option>
+<option>42R</option>
+<option>46R</option>
+<option>48R</option>
+<option>50R</option>
+</select>
+
+
+</div>
+<!-- End Description -->
+
+
+
+<!-- Cart Button -->
+<div class="cartbutton" style="position: absolute; top: 58%; right: 27.8%; ">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="kin@kinskards.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name" value="Navy Blue Plaid Suit">
+  <input type="hidden" name="amount" value="224.00">
+  <input type="hidden" name="currency_code" value="USD">
+
+  <!-- Display the payment button. -->
+  <input type="image" name="submit"
+    src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_addtocart_120x26.png"
+    alt="Add to Cart">
+  <img alt="" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+</form>
+</div>
+<!-- End Cart Button -->
+
+
+
+</div></center>
+<br><br><br>
+
+<!-- Section End -->
+
+
+
+<!-- NavBar Start -->
+<div id="navbar">
+	<div id="myNav" class="overlay">
+		<div class="overlay-content">
+			<div class="container purple topBotomBordersIn">
+				<div class="content1"><a href="home.html">Home</a></div>
+				<div class="content2"><a href="catalog.html">Catalog</a></div>
+				<div class="content3"><a href="limiteds.html">Limiteds</a></div>
+				<div class="content4"><a href="about.html">About</a></div>
+			</div>
+		</div>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";}
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";}
+</script>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-50px";
+    }
+}
+</script>
+<!-- NavBar End -->
+
+
+<!-- Footer start -->
+	<div class="footer">
+		<div style="float: left;">
+		<p>Grizzly Attire ©</p>
+		<p>172 Grizzly Lane, Franklin, NC, 3847</p>
+		<p>Phone Number: (1) 800-284-2948</p>
+		<p>Email: GrizzlyAttire@gmail.com</p>
+		<p>Contact CS from 9:00 AM - 7:00 PM EST (Mon-Sat)</p>
+		</div>
+		<div class="img012"></div>
+	</div>
+<!-- Footer End -->
+
+</body>
+</html>

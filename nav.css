@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  background-color: white;
+  background-image: url("https://subtlepatterns.com/patterns/sayagata-400px.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display:block;
+  transition: top 0.3s;
+  border-bottom: 3px solid black;
+  text-align: left;
+  padding: 3px;
+  padding-left: 6px;
+}
+
+/* Navbar animaition */
+
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+div.container {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+	text-align: center;
+}
+
+div.container a {
+    color: rgba (255,255,255,0.9);
+    text-decoration: none;
+    font: 30px 'Lato', sans-serif;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.container a:after {
+	color: white;
+	text-decoration: bold;
+}
+
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before {
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after {
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* End Navbar animation */
+
+.title {
+	background-image: url('bg2.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 1000px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.content1 {
+	width: 25%;
+	height: 1000px;
+	background-color: white;
+	float: left;
+	background-image: url('1.jpg');
+	background-size: cover;
+	background-position: absolute;
+	background-attachment: fixed;
+    transition: 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.content1 a {
+	position: relative;
+	top: 30%;
+	color: rgba (255,255,255,0.9)
+}
+
+.content1 a:hover {
+	background-color: rgba(33,33,33,0.8);
+	transition: 0.5s;
+}
+
+.content1:hover {
+    transition: 0.5s;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.content2 {
+	width: 25%;
+	height: 1000px;
+	background-color: white;
+	float: left;
+	background-image: url('1.jpg');
+	background-size: cover;
+	background-position: absolute;
+	background-attachment: fixed;
+    transition: 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.content2 a {
+	position: relative;
+	top: 30%;
+	color: rgba (255,255,255,0.9)
+}
+
+.content2 a:hover {
+	background-color: rgba(33,33,33,0.8);
+	transition: 0.5s;
+}
+
+.content2:hover {
+    transition: 0.5s;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.content3 {
+	width: 25%;
+	height: 1000px;
+	background-color: white;
+	float: left;
+	background-image: url('1.jpg');
+	background-size: cover;
+	background-position: absolute;
+	background-attachment: fixed;
+    transition: 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.content3 a {
+	position: relative;
+	top: 30%;
+	color: rgba (255,255,255,0.9)
+}
+
+.content3 a:hover {
+	background-color: rgba(33,33,33,0.8);
+	transition: 0.5s;
+}
+
+.content3:hover {
+    transition: 0.5s;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.content4 {
+	width: 25%;
+	height: 1000px;
+	background-color: white;
+	float: left;
+	background-image: url('1.jpg');
+	background-size: cover;
+	background-position: absolute;
+	background-attachment: fixed;
+    transition: 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.content4 a {
+	position: relative;
+	top: 30%;
+	color: rgba (255,255,255,0.9)
+}
+
+.content4 a:hover {
+	background-color: rgba(33,33,33,0.8);
+	transition: 0.5s;
+}
+
+.content4:hover {
+    transition: 0.5s;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 45px;
+    font-size: 80px;
+}

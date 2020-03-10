@@ -1,0 +1,133 @@
+.abouttopnav {
+    position: relative;
+    float: top;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    height: 60px;
+    border-bottom: 3px solid white;
+	padding-top: 30px;
+}
+
+.abouttopnav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    float: bottom;
+	padding: 7px;
+    margin-left: 3%;
+    margin-right: 3%;
+    transition: 0.3s;
+	position: relative;
+}
+
+.abouttopnav a:hover {
+    text-decoration: bold;
+    color: rgba(255, 255, 255, 1);
+    transition: 0.3s;
+    border-top: 3px solid white;
+}
+
+.section {
+    height: 740px;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+	position: relative;
+}
+
+.persimg {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 3px solid black;
+    background-image: url('me.jpg');
+    background-size: cover;
+	display: inline-block;
+	float: left;
+}
+
+.logoimg {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 3px solid black;
+    background-image: url('logo.png');
+    background-size: cover;
+	display: inline-block;
+	float: left;
+}
+
+.title2 {
+    float: top;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: black;
+	padding-left: 5px;
+    position: relative;
+	display: inline-block;
+}
+
+.title3 {
+    float: top;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: black;
+	padding-left: 5px;
+    position: relative;
+	display: inline-block;
+}
+
+.sec2 {
+	float: right;
+	width: 98%;
+	height: 340px;
+	border: 3px solid black;
+	padding: 10px;
+}
+
+.sec3 {
+	float: right;
+	width: 98%;
+	height: 340px;
+	border: 3px solid black;
+	padding: 10px;
+}
+
+.captiontxt {
+    float: left;
+    position: absolute;
+    left: 4.5%;
+	top: 46%;
+    color: black;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+}
+
+.captiontxt2 {
+    float: left;
+    position: absolute;
+    left: 4.5%;
+	top: 94%;
+    color: black;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+}
+
+.bdtxt {
+    position: relative;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+	left: 0.4%;
+}
+
+.bdtxt2 {
+    position: relative;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+	left: 0.4%;
+}

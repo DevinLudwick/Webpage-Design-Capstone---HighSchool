@@ -1,0 +1,47 @@
+.A99 {
+    height: 800px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+}
+
+.sec222 {
+	width: 100%;
+	height: 100%;
+}
+
+.title123 {
+	color: black;
+	font-size: 50px;
+	font-family: arial;
+}
+
+#box {
+	width: 100%;
+	height: 15%;
+	border: 3px solid black;
+	background-color: green;
+	position: relative;
+}
+
+#sec1 {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	background-color: #555;
+	font-family: arial;
+	font-size: 22px;
+	padding: 3px;
+	color: white;
+}
+
+#sec2 {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	background-color: #f9f9f9;
+	font-family: arial;
+	font-size: 18px;
+	padding: 3px;
+}
